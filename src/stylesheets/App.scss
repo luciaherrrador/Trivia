@@ -1,0 +1,152 @@
+$color-bg: #4e5673;
+$color-navbar: #002b42;
+$color-navbar-hover: #005380;
+$color-btn-navbar: #001724;
+$font: #fff;
+$greenish: #21a181;
+$table-row: #242424;
+$table-questions: #141414;
+
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+
+
+
+//--------------------
+//--------BASE - GENERAL-------
+//--------------------
+
+
+body {
+    font-family: 'Roboto', serif;
+    background-color: $color-bg;
+}
+
+button, a {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+span {
+    vertical-align: middle;
+  }
+
+//--------------------
+//--------NAVBAR-------
+//--------------------
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $color-navbar;
+    height: 4rem;
+}
+
+.link {
+   
+    display: inline-block;
+    line-height: 24px;
+    left: 50%;
+    top: 50%;
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+}
+.link-nav {
+    margin: 10px 5px;
+    padding: 8px 16px;
+    color: $font;
+    background-color: $color-btn-navbar;
+
+    &::before {
+        display: inline-block;
+        vertical-align: middle;
+        height: 19px;
+        width: 19px;
+        margin-right: 6px;
+        background-image: url(../icons/menu.svg);
+    }
+}
+
+.link-nav:last-child {
+    margin-right: 2rem;
+}
+
+
+.link-nav:hover {
+    background-color: $color-navbar-hover;
+
+}
+
+//--------------------
+//--------MAIN-------
+//--------------------
+.box {
+    background-color: $color-bg;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+table {
+    color: $font;
+    margin-top: 5rem;
+    width: 75vw;
+    .table__title {
+        color: $font;
+        font-weight: lighter;
+        font-size: 1.3rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .table__row {
+        background-color: $table-row;
+        height: 3rem;
+        text-align: left;
+        font-weight: 900;
+
+        &--questions {
+            height: 2rem;
+            background-color: $table-questions;
+            font-weight: lighter;
+            font-size: 0.9rem;
+        }
+
+    }
+
+    .table__cel {
+        padding-top: 0.9rem;
+        padding-left: 0.8rem;
+    }
+    .table__cel6{
+        color: $greenish;
+    }
+}
+
+.pager {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    //margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.pager__btn {
+    height: 2rem;
+    width: 4rem;
+    background-color: $greenish;
+    border-radius: 4px;
+    color: $font;
+}
+.pager__btn:hover {
+    background-color: #3cd7b0;
+}
