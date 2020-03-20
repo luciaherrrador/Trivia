@@ -2,6 +2,7 @@ import React from 'react';
 
 
 const Table = props => {
+    
     return <main className="box">
     <table className="table">
         <caption className="table__title">Browse Questions</caption>
@@ -19,7 +20,9 @@ const Table = props => {
 
         <tbody className="table__body">
             
-            {props.questions.map((item, index) => {
+            {props.questions
+            .filter(item => props.search === '' || item.category.toLowerCase().includes(props.search))
+            .map((item, index) => {
               return (
                 <tr className="table__row--questions" key={index}>
                   <td className="table__cel">Number</td>

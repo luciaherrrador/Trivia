@@ -4,15 +4,17 @@ import { getDataFromServer } from '../services/Api';
 import Header from './Header';
 import Table from './Table';
 import Pager from './Pager';
+import Filters from './Filters';
 
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    //this.handleQuestions = this.handleQuestions.bind(this);
     this.state = {
       questions: [],
+      search: ''
     }
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -24,16 +26,23 @@ class App extends React.Component {
       })
   }
 
-  /*handleQuestions(id) {
-    console.log(id)
-  }*/
+  handleChange(value) {
+    this.setState({
+      search: value
+    })
+  }
 
   render() {
     console.log(this.state)
     return (
       <div className="App">
         <Header/>
-        <Table questions={this.state.questions} />
+        <Filters
+        handleChange={this.handleChange}
+        search={this.state.search}/>
+        <Table 
+        questions={this.state.questions}
+        search={this.state.search}/>
         <Pager/>
       </div>
     );
