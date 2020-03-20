@@ -34,9 +34,8 @@ span {
     vertical-align: middle;
   }
 
-//--------------------
 //--------NAVBAR-------
-//--------------------
+
 header {
     display: flex;
     flex-direction: row;
@@ -58,7 +57,7 @@ header {
       background-size: 100% 100%;
     }
 }
-.link-nav {
+.link-nav1 {
     margin: 10px 5px;
     padding: 8px 16px;
     color: $font;
@@ -73,6 +72,65 @@ header {
         background-image: url(../icons/menu.svg);
     }
 }
+.link-nav2 {
+    margin: 10px 5px;
+    padding: 8px 16px;
+    color: $font;
+    background-color: $color-btn-navbar;
+
+    &::before {
+        display: inline-block;
+        vertical-align: middle;
+        height: 19px;
+        width: 19px;
+        margin-right: 6px;
+    }
+}
+.link-nav3 {
+    margin: 10px 5px;
+    padding: 8px 16px;
+    color: $font;
+    background-color: $color-btn-navbar;
+
+    &::before {
+        display: inline-block;
+        vertical-align: middle;
+        height: 19px;
+        width: 19px;
+        margin-right: 6px;
+        background-image: url(../icons/gear.svg);
+    }
+}
+.link-nav4 {
+    margin: 10px 5px;
+    padding: 8px 16px;
+    color: $font;
+    background-color: $color-btn-navbar;
+
+    &::before {
+        display: inline-block;
+        vertical-align: middle;
+        height: 19px;
+        width: 19px;
+        margin-right: 6px;
+        background-image: url(../icons/login.svg);
+    }
+}
+.link-nav5 {
+    margin: 10px 5px;
+    padding: 8px 16px;
+    color: $font;
+    background-color: $color-btn-navbar;
+
+    &::before {
+        display: inline-block;
+        vertical-align: middle;
+        height: 19px;
+        width: 19px;
+        margin-right: 6px;
+        background-image: url(../icons/gear.svg);
+    }
+}
 
 .link-nav:last-child {
     margin-right: 2rem;
@@ -84,9 +142,8 @@ header {
 
 }
 
-//--------------------
 //--------MAIN-------
-//--------------------
+
 .box {
     background-color: $color-bg;
     height: 100vh;
