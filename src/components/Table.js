@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Pager from './Pager';
 
 const Table = props => {
     
@@ -36,7 +36,7 @@ const Table = props => {
             })}
         </tbody>
     </table>
-   
+   <Pager/>
 </main>
 }
 

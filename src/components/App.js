@@ -3,7 +3,7 @@ import '../stylesheets/App.scss';
 import { getDataFromServer } from '../services/Api';
 import Header from './Header';
 import Table from './Table';
-import Pager from './Pager';
+//import Pager from './Pager';
 import Filters from './Filters';
 
 
@@ -12,7 +12,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       questions: [],
-      search: ''
+      search: '',
     }
     this.handleChange = this.handleChange.bind(this);
   }
@@ -43,7 +43,7 @@ class App extends React.Component {
         <Table 
         questions={this.state.questions}
         search={this.state.search}/>
-        <Pager/>
+  
       </div>
     );
   }

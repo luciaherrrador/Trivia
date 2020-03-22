@@ -19,6 +19,4 @@ Filters.propTypes = {
 }
 
 
-
-
 export default Filters;
