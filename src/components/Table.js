@@ -19,7 +19,6 @@ const Table = props => {
         </thead>
 
         <tbody className="table__body">
-            
             {props.questions
             .filter(item => props.search === '' || item.category.toLowerCase().includes(props.search))
             .map((item, index) => {
@@ -36,10 +35,8 @@ const Table = props => {
             })}
         </tbody>
     </table>
-   <Pager/>
+<Pager/>
 </main>
 }
-
-
 
 export default Table;
