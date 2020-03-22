@@ -18,5 +18,4 @@ Filters.propTypes = {
     handleChange: PropTypes.func.isRequired
 }
 
-
 export default Filters;
