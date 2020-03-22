@@ -6,8 +6,11 @@ Las cuestiones pueden ser filtradas por categoría.
 Tecnologías utilizadas para su desarrollo:
 
   -HTML
+  
   -SCSS
+  
   -JAVASCRIPT
+  
   -REACT
 
 TODO's:
